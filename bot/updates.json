@@ -1,0 +1,62 @@
+{
+    "ok": true,
+    "result": [
+        {
+            "update_id": 124100737,
+            "message": {
+                "message_id": 6,
+                "from": {
+                    "id": 100310279,
+                    "is_bot": false,
+                    "first_name": "OlegBrony",
+                    "language_code": "en"
+                },
+                "chat": {
+                    "id": 100310279,
+                    "first_name": "OlegBrony",
+                    "type": "private"
+                },
+                "date": 1511200911,
+                "text": "Благодарю, miss"
+            }
+        },
+        {
+            "update_id": 124100738,
+            "message": {
+                "message_id": 17,
+                "from": {
+                    "id": 100310279,
+                    "is_bot": false,
+                    "first_name": "OlegBrony",
+                    "language_code": "en"
+                },
+                "chat": {
+                    "id": 100310279,
+                    "first_name": "OlegBrony",
+                    "type": "private"
+                },
+                "date": 1511201226,
+                "text": "я поверить не могу, что это кому-то понадобилось..."
+            }
+        },
+        {
+            "update_id": 124100739,
+            "message": {
+                "message_id": 28,
+                "from": {
+                    "id": 100310279,
+                    "is_bot": false,
+                    "first_name": "OlegBrony",
+                    "language_code": "en"
+                },
+                "chat": {
+                    "id": 100310279,
+                    "first_name": "OlegBrony",
+                    "type": "private"
+                },
+                "date": 1511201541,
+                "text": "йцуйцуфвыqweqwe"
+            }
+        }
+    ]
+}

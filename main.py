@@ -5,6 +5,7 @@
 # bool('True')						- перевод в бул
 # range(100)	#создать массив:	- диапазон 0 - 99
 # list()		#list(range(100))	- перевод в строку
+# https://pythonworld.ru/osnovy/vstroennye-funkcii.html
 
 # test.index(x)						- возвращает индекс первого икса
 # test.reverse()					- реверсирует массив
@@ -14,6 +15,24 @@
 # len(test)							- считает, сколько всего элементов
 # test.append()						- добавляет элемент в конец массива
 # test.insert(index, 'znachenie')	- довавляет элемент на выбранный индекс (оставльные двигаются)
+
+###########whiles
+# i = 5 
+# while i<15:
+# 	print(i)
+# 	i +=1
+
+# for i in 'Hello World':
+# 	if i == 'o': continue			#break - exit
+# 	print(i*2, end='')
+#Слово else, примененное в цикле for или while, проверяет, был ли произведен выход из цикла инструкцией break, или же "естественным" образом. 
+#else выполнится только в том случае, если выход из цикла произошел без помощи break.
+
+# for i in 'Hello, World':
+# 	if i == 'q':
+# 		break
+# else:
+# 	print('\'q\' is not')
 
 # test = list(range(2, 21, 2))
 # i = 0 
@@ -188,9 +207,9 @@
 
 # input_str = 'Jessy'
 # if len(input_str)%2:
-# 	print(('{0:@^11}').format(input_str))
+# 	print(('{0:@^21}').format(input_str))
 # else: 
-# 	print(('{0:@^10}').format(input_str))
+# 	print(('{0:@^20}').format(input_str))
 
 # print(arr1)
 # arr1 = [for i in range(arr)]
@@ -263,7 +282,7 @@
 # 		print(' \'' + letter + '\' is there')
 # 		break
 # 	print(j*3, end = '')
-# else:  						# оператор else в структуре for служит для исполнения кода, в случае если оператор break не сработал (если он, конечно, есть)
+# else:  					# оператор else в структуре for служит для исполнения кода, в случае если оператор break не сработал (если он, конечно, есть)
 # 	print(' \'' + letter + '\' is not in there')
 
 # a = [x + y for x in 'list' if x != 's' for y in 'soup' if y != 'u']
@@ -293,7 +312,7 @@
 # while i < len(l):
 # 	print(l[i])
 # 	i+=1
-# print(i)					# переменная i существует после выполнения цикла
+# print(i)					# переменная i существует после в.ыполнения цикла
 # # item[START:STOP:STEP]
 
 # a,b,c = 0,0,3				# так тоже можно
@@ -301,8 +320,25 @@
 
 # a = 43,32,64,123.324
 # b = [32.45,234,746,432,43]
+# c = 123
+# d = 86934086348
+# e = 1387409237984632897563489529
+# f = 13.24124515187095342
+# g = 'HE:LWKeqwelri uewiovfdshgskl djfhgdflgh sl'
+# h = None
+# k = True
+# l = False
+
 # print(a.__sizeof__()) 			#28
 # print(b.__sizeof__()) 			#40 		return size in bytes
+# print(c.__sizeof__())
+# print(d.__sizeof__())
+# print(e.__sizeof__())
+# print(f.__sizeof__())
+# print(g.__sizeof__())
+# print(h.__sizeof__())
+# print(k.__sizeof__())
+# print(l.__sizeof__())
 
 # a = ('hello',)					# 1 way to declare a tuple
 # print(a)						# it's already tuple, not variable
@@ -470,3 +506,386 @@
 # fun = lambda *args : args 
 # print(fun(123,432.43,True,'Helo',[43,53,76,90]))
 
+# print(1/0) # ZeroDivision
+# print(int('qwe')) #Value
+# print('2'+1) # Type
+
+# x = int(input())
+# y = int(input())
+# try:
+# 	res = x/y
+# except ZeroDivisionError: 
+# 	res = 0 
+# 	print('You can\'t division on 0')
+
+# try:
+# 	x = int(input())
+# except ValueError: 
+# 	print('You should enter a number')
+# # print(x)									# x is not exist now
+
+# try:
+# 	x = int(input())
+# except ValueError:
+# 	print('It\'s not a number')
+# 	x = 0
+# try:
+# 	y = int(input())
+# except ValueError:
+# 	print('It\'s not a number')
+# 	y = 0
+# else: 
+# 	print('Your input is correct')
+# finally:
+# 	print('the input ends.')
+# try: 
+# 	res = x/y
+# except ZeroDivisionError:
+# 	print('0? again?')
+# 	res = 0
+# print(res)
+
+# x, y = None, None								# максимально чистый код, которого мне удалось добиться
+# while x is None or y is None or y == 0:
+# 	try:
+# 		x = int(input())
+# 		y = int(input())
+# 		res = x/y
+# 	except ValueError:
+# 		print('Your input is wrong. Try again')
+# 		continue
+# 	except ZeroDivisionError:
+# 		print('Your Y is 0. Try again')
+# 		continue
+# 	else: 
+# 		print('the input ends')
+# 		print('answer - '+str(res))
+# 		break
+# print(x,y)
+
+# f = open('text.txt')
+# print(f.read())
+# for line in f:
+# 	print(line, end='')
+# f.close()
+
+# f = open('text.txt','w')
+# f.write('testestsetsersetesrerewrwerwe rfd ')
+# f.close()
+
+# with open('test.txt', 'w', encoding='utf-8') as inFile:
+# 	num = int(input())
+# 	line = str('1 / ' + str(num) + ' = ' + str(1/num))
+# 	print(line)
+# 	inFile.write(line)
+
+# # import math, time
+# import random as r
+# # try: 
+# # 	import somemodule
+# # except ImportError:
+# # 	pass
+# # import mymodule as m
+# from mymodule import mult
+# # print(math.e)
+# # print(math.pi)
+# # print(math.cos(3))
+# # print(time.time())
+# # print(os.getcwd())
+# # print(r.random())
+# # m.hi()
+# # print(m.plus(15,43))
+# print(mult(564,2))
+# # print(m.mult(43,20))
+
+################################################ OOP DAAAAAAAAAAAAAAAAAAAAAAAAA
+# class Person:							# создаю класс 
+# 	name = 'Default name'				# создаю в нём поле
+# 	age = 10							# второе
+# 										# 
+# 	def __set(self, inp_name, inp_age):	# создаю в нём метод как функцию. в аргументах - обязятельно self, ибо это класс. 
+# 		self.name = inp_name			# присваеваю к полю нейм то слово, что в аргументе
+# 		self.age = inp_age				# и так же в возрастом
+# 										# 
+# vlad = Person()							# создаю объект класса 
+# vlad._Person__set('Vladislav', 25)				# присваиваю значения к полям с помощью метода set
+# print(vlad.name + ' ' + str(vlad.age))	# вывожу значения
+# 										# 
+# alex = Person()							# ну всё понятно... 
+# alex._Person__set('Alex', 13)					# тоже самое.
+# print(alex.name, alex.age)				# без конкатонации и преобразования тоже можно
+
+# ######################### наследование, полиморфизм, инкапсуляция
+# # наследование - создание класса, который в точности копирует все поля и методы класса
+# class Student(Person):
+# 	"""docstring for Student"""
+# 	course = 1
+# 										# def __init__(self, arg):
+# 										# 	super(Student, self).__init__()
+# 										# 	self.arg = arg
+# igor = Student()
+# igor._Person__set('Igor', 19)
+# igor.course = 2
+# print(igor.name, igor.course)
+
+########################################Конструкторы
+
+# class Person: 
+# 	name = 'Dafault name'
+# 	age = 18
+
+# 	def __init__(self, name, age):
+# 		self.name = name
+# 		self.age = age
+
+# 	def __set(self, name, age):
+# 		self.name = name
+# 		self.age = age
+
+# class Student (Person):
+# 	course = 1
+
+# igor = Student()
+# igor._Person__set('Igor', 19)
+# igor.course = 2
+# print(igor.course)
+
+# vlad = Person()
+# vlad._Person__set('Vlad', 25)
+# print(vlad.name + ' ' + str(vlad.age))
+
+########################################Декораторы
+
+# def decorator(func):
+# 	def wrapper():
+# 		print('Hello, world 1')
+# 		func()
+# 		print('Hello, world 2')
+# 	return wrapper
+
+# def show():
+# 	print('line')
+
+# show()
+# dec = decorator(show)
+# dec()
+
+#----------------------------------------------------------------------------------------------------------------------------
+# import keyword
+# print(keyword.kwlist)
+# print(keyword.iskeyword('big'))
+
+# print(divmod(19, 3))				# тоже полезная штука.
+
+# print(int(12.432))
+# print(bin(123))
+# print(oct(123))
+# print(hex(123))
+# print(int(0o173))
+
+# print(0.2 + 0.2 + 0.2 + 0.2 + 0.2 + 0.2 + 0.2 + 0.2) 			# при 8 значениях ломается. показывает 0.7999. 1.59999.
+
+# print(3**1000)
+
+# int(123.123)		#same things
+# round(123.123)	#same things
+
+# x = 'Hello World'
+# print(x)					# нельзя просто так взять и переписать символ в строке, нужно создавать новую.
+# x = x[0:5] + ',' + x[6:]
+# print(x)
+
+# x = '598578950309845098'
+# summ = 0
+# for i in range(len(x)):
+# 	summ += int(x[i])*(i+1) 
+# print(summ)
+
+# x = '{0}, {1}, {2}'.format('a','b','c')
+# print(x)
+# x = '{}, {}, {}'.format('a','b','c')
+# print(x)
+# x = '{0}, {1}, {2}'.format(*'abc')
+# print(x)
+# x = '{1}, {2}, {0}'.format('a','b','c')
+# print(x)
+# x = 'Coordinates: {latitude}, {longitude}'.format(latitude = '12.12', longitude = 'qwewqe')
+# print(x)
+# y = {'hello':'hi', 'first':'one'}
+# x = 'Coordinates: {hello}, {first}'.format(**y)
+# print(x)
+
+# c = [x*3 for x in 'list']
+# print(c)
+# c = [x*3 for x in 'list' if x != 'i']
+# print(c)
+# c = [x+y for x in 'list' if x != 's' for y in 'qwerty' if y != 'r']
+
+# quotes = {
+#  "Moe": "A wise guy, huh?",
+#  "Larry": "Ow!",
+#  "Curly": "Nyuk nyuk!",
+#  }
+# stooge = "Curly"
+# print(stooge, "says:", quotes[stooge])
+
+# for countdown in 5, 4, 3, 2, 1, "hey!", 234:
+#  print(countdown)
+
+# import json
+# from urllib.request import urlopen
+# url = "https://gdata.youtube.com/feeds/api/standardfeeds/top_rated?alt=json"
+# response = urlopen(url)
+# contents = response.read()
+# text = contents.decode('utf8')
+# data = json.loads(text)
+# for video in data['feed']['entry'][0:6]:
+#  print(video['title']['$t'])
+
+# import this
+
+# while True:
+# 	while True:
+# 		try:
+# 			a = float(input(':'))
+# 			b = float(input(':'))
+# 			break
+# 		except ValueError:
+# 			print('wrong input')
+# 			# exit = input('Nadoelo? ')
+# 			# if (exit == '1') or (exit == 'yes') or (exit == 'Yes'): break
+# 			# else: continue
+# 	oper = input('+, -, *, /, //, %, ^, div:')
+# 	if oper == '+':
+# 		c = a+b
+# 	elif oper == '-':
+# 		c = a-b
+# 	elif oper == '*':
+# 		c = a*b
+# 	elif oper == '/':
+# 		c = a/b
+# 	elif oper == '//':
+# 		c = a//b
+# 	elif oper == '%':
+# 		c = a%b
+# 	elif oper == '^':
+# 		c = a**b
+# 	elif oper == 'div':
+# 		print(divmod(a,b))
+# 	else:
+# 		print('wrong input')
+# 	if oper != 'div':
+# 		d = int(c)
+# 		if d != c: 
+# 			print(c)
+# 		else: 
+# 			print(d)
+# 	exit = input('Exit? ')
+# 	if (exit == '1') or (exit == 'yes') or (exit == 'Yes'): break
+# 	else: continue
+
+# x = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
+# y = x.split()
+# print(y[2])
+# print(y)
+
+# z = ' '.join(y)
+# print(z)
+
+# print(z.startswith('Lorem'))
+
+# print(z.endswith('mod'))
+
+# word = 'ip,'
+# print(z.find(word))
+# print(z.rfind(word))
+# print(z.count(word))
+# print(z.isalnum())
+
+############################################ регистр
+
+# setup = '**ut enim ad minim veniam, quis nostrud. exercitation ullamco************'
+# z = setup.strip('***')
+# print(z)
+# z = z.capitalize()
+# print(z)
+# z = z.title()
+# print(z)
+# z = z.upper()
+# print(z)
+# z = z.lower()
+# print(z)
+# z = z.swapcase()
+# print(z)
+# z = z.center(70)
+# print(z)
+# z = z.rjust(95)
+# print(z)
+
+# x = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
+# y = x.replace('si', '**')
+# print(y)
+# y = x.replace('si', '**', 1)
+# print(y)
+
+# x = list('cat')
+# print(x)
+# y = ('qe', 'asd', 'fjfjf')
+# del y 						# tuple can be deleted
+# x = list(y)
+# print(x)
+# x.append('llllllwerwerw')
+# print(x)
+# x = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet']
+# y = ['consectetur', 'adipisicing', 'elit', 'sit', 'do', 'eiusmod']
+# x.extend(y)
+# print(x)
+# x.insert(40, 'DOLOR')
+# print(x)
+# del x[-1]
+# print(x)
+# x.remove('sit')
+# print(x)
+# print(x.pop())
+# print(x)
+# print(x.index('sit'))
+
+# print('sitw' in x)
+# print(x.count('sit'))
+
+# x.sort(reverse=True)
+# print(x)
+
+first = ['qwe',';kl','ghj','fgh','try','zxc','asd']
+sec = ['qqq','www','eee','rrr','ttt','yyy']
+# print(sec)
+# sec = list(first)
+# sec = first[:]
+sec = first.copy()
+print(sec)
+print(first)
+# first = 'hello'
+# print(sec)
+
+# a = [1,2,3]
+# b = a
+# print(b)
+# a[0] = 'surprise'
+# print(b)
+# b[0] = 'I hate surprises'
+# print(a)
+
+# n = int(input())				# числа фибаначи. 
+# x, y = 0, 1
+# n1 = 0
+# while n1 < n:
+# 	print(x, end=' ')
+# 	x, y = y, x+y
+# 	n1 += 1
+# print()
+
+# x = [1,2,4,5,6,7,8]
+# print(x.reverse())
+# print(x)
+
+# len() split() join() x.startswith() x.endswith() x.find() x.rfind() x.count() x.isalnum() x.strip() x.title() x.upper() x.lower() x.swapcase() x.center() x.ljust() x.rjust() x.replace() x.append() x.extend() x.insert() x.remove() x.pop() 'qwe' in x x.count() x.index() f=sorted(s) x.sort(reverse=True) s=list(first) s=f[:] s=f.copy() print(x.__sizeof__())
