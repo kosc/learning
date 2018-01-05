@@ -16,7 +16,7 @@
 # test.append()						- добавляет элемент в конец массива
 # test.insert(index, 'znachenie')	- довавляет элемент на выбранный индекс (оставльные двигаются)
 
-###########whiles
+# ##########whiles
 # i = 5 
 # while i<15:
 # 	print(i)
@@ -25,8 +25,8 @@
 # for i in 'Hello World':
 # 	if i == 'o': continue			#break - exit
 # 	print(i*2, end='')
-#Слово else, примененное в цикле for или while, проверяет, был ли произведен выход из цикла инструкцией break, или же "естественным" образом. 
-#else выполнится только в том случае, если выход из цикла произошел без помощи break.
+# Слово else, примененное в цикле for или while, проверяет, был ли произведен выход из цикла инструкцией break, или же "естественным" образом. 
+# else выполнится только в том случае, если выход из цикла произошел без помощи break.
 
 # for i in 'Hello, World':
 # 	if i == 'q':
@@ -137,7 +137,7 @@
 # 	'red' = [255,0,0],
 # 	'green' = [0,255,0],
 # 	'blue' = [0,0,255],
-#	[1,2,3] = 'black' - KeyError
+# 	[1,2,3] = 'black' - KeyError
 # }
 # print(primary['red'])
 # print(primary['yellow'])
@@ -254,7 +254,7 @@
 
 # print(sum([3,64,123,735,123,543,12413,124,123,-2323,123,0]))
 
-############################################################################### course nomder 2
+# ############################################################################## course nomder 2
 
 # a = 10
 # b = 20
@@ -385,8 +385,8 @@
 # print(person)
 # print(person['name']['first_name'])
 # print(person['phone']['mobile_phone'])
-# # person.clear()
-# print(person)
+# # # person.clear()
+# # print(person)
 # print(person.values())	#
 # print(person.keys())	# возвращает ключи в словаре
 # print(person.items())	# возвращает пары (ключ, значение)
@@ -471,7 +471,7 @@
 # a.clear()									# nu ti ponyal
 # print(a)
 
-####### functions 
+# ###### functions 
 
 # def func(x):
 # 	def add(a):
@@ -598,7 +598,7 @@
 # print(mult(564,2))
 # # print(m.mult(43,20))
 
-################################################ OOP DAAAAAAAAAAAAAAAAAAAAAAAAA
+# ############################################### OOP DAAAAAAAAAAAAAAAAAAAAAAAAA
 # class Person:							# создаю класс 
 # 	name = 'Default name'				# создаю в нём поле
 # 	age = 10							# второе
@@ -628,7 +628,7 @@
 # igor.course = 2
 # print(igor.name, igor.course)
 
-########################################Конструкторы
+# #######################################Конструкторы
 
 # class Person: 
 # 	name = 'Dafault name'
@@ -654,7 +654,7 @@
 # vlad._Person__set('Vlad', 25)
 # print(vlad.name + ' ' + str(vlad.age))
 
-########################################Декораторы
+# #######################################Декораторы
 
 # def decorator(func):
 # 	def wrapper():
@@ -670,7 +670,7 @@
 # dec = decorator(show)
 # dec()
 
-#----------------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------------
 # import keyword
 # print(keyword.kwlist)
 # print(keyword.iskeyword('big'))
@@ -802,7 +802,7 @@
 # print(z.count(word))
 # print(z.isalnum())
 
-############################################ регистр
+# ########################################### регистр
 
 # setup = '**ut enim ad minim veniam, quis nostrud. exercitation ullamco************'
 # z = setup.strip('***')
@@ -856,14 +856,14 @@
 # x.sort(reverse=True)
 # print(x)
 
-first = ['qwe',';kl','ghj','fgh','try','zxc','asd']
-sec = ['qqq','www','eee','rrr','ttt','yyy']
+# first = ['qwe',';kl','ghj','fgh','try','zxc','asd']
+# sec = ['qqq','www','eee','rrr','ttt','yyy']
 # print(sec)
 # sec = list(first)
 # sec = first[:]
-sec = first.copy()
-print(sec)
-print(first)
+# sec = first.copy()
+# print(sec)
+# print(first)
 # first = 'hello'
 # print(sec)
 
@@ -875,17 +875,1143 @@ print(first)
 # b[0] = 'I hate surprises'
 # print(a)
 
-# n = int(input())				# числа фибаначи. 
+
+# n = int(input())			# числа фибаначи. 
 # x, y = 0, 1
-# n1 = 0
-# while n1 < n:
-# 	print(x, end=' ')
+# while n > 0:
+# 	print(x, end = '; ')
 # 	x, y = y, x+y
-# 	n1 += 1
+# 	n -= 1
 # print()
+
+# max_num = int(input())
+# x, y = 0, 1
+# while x < max_num:
+# 	print(x, end = '; ')
+# 	x, y = y, x+y
+
 
 # x = [1,2,4,5,6,7,8]
 # print(x.reverse())
 # print(x)
 
-# len() split() join() x.startswith() x.endswith() x.find() x.rfind() x.count() x.isalnum() x.strip() x.title() x.upper() x.lower() x.swapcase() x.center() x.ljust() x.rjust() x.replace() x.append() x.extend() x.insert() x.remove() x.pop() 'qwe' in x x.count() x.index() f=sorted(s) x.sort(reverse=True) s=list(first) s=f[:] s=f.copy() print(x.__sizeof__())
+# x = [ ['a','A'], ['b','B'], ['c','C'] ]
+# y = dict(x)
+# print(y)
+
+
+# x = {'Cleese': 'John', 'Jones': 'Terry', 'Palin': 'Michael', 'Chapman': 'Graham', 'Idle': 'Eric'}
+# x['Gilliam'] = 'Terry'
+# print(x)
+# print('Cleese' in x)
+# print('John' in x)
+# print(x.get('Cleese'))
+# print(x.items())
+# keys = list(x.keys())
+# values = list(x.values())
+# print(keys)
+# print(values)
+# x = set(x)
+# print(x)
+
+# drinks = {
+# 	'martini': {'vodka', 'vermouth'},
+# 	'black russian': {'vodka', 'kahlua'},
+# 	'white russian': {'cream', 'kahlua', 'vodka'},
+# 	'manhattan': {'rye', 'vermouth', 'bitters'},
+# 	'screwdriver': {'orange juice', 'vodka'}
+# }
+# for x, y in drinks.items():
+# 	if 'vodka' in y and not ('vermouth' in y or 'cream' in y):
+# 		print(x)
+# print()
+# for x, y in drinks.items():
+# 	if ('orange juice' in y) or ('vermouth' in y):
+# 		print(x)
+
+# for x, y in drinks.items():
+# 	if y & {'vermouth', 'orange juice'}:
+# 		print(x)
+
+# for x,y in drinks.items():
+# 	if 'vodka' in y and not y & {'vermouth', 'cream'}:
+# 		print(x)
+
+# black = drinks['black russian']
+# white = drinks['white russian']
+
+# a = {1,2,3,4,10,11,12}
+# b = {4,3,2,1.0,5,6,7,8}
+# print(a & b)
+# print(a.intersection(b))
+# print(black & white)
+# print()
+# print(a | b)
+# print(a.union(b))
+# print(black | white)
+# print()
+# print(a - b)
+# print(a.difference(b))
+# print(b.difference(a))
+# print(white - black)
+# print()
+# print(a ^ b)
+# print(a.symmetric_difference(b))
+# print(black ^ white)
+# print()
+# print(black <= white)
+# print(black.issubset(white))
+# print(white >= black)
+# print(white.issuperset(black))
+
+
+# marxes  = ['Groucho', 'Chico', 'Harpo']
+# pythons = ['Chapman', 'Cleese', 'Gilliam', 'Jones', 'Palin']
+# stooges = ['Moe', 'Curly', 'Larry']
+# x = (marxes,pythons,stooges)
+# print(x)
+# x = [marxes,pythons,stooges]
+# print(x)
+# x_dict = {'Marxes' : marxes, 'Pythons' : pythons, 'Stooges' : stooges}
+# print(x_dict)
+# x = {
+# 	(44.79, -93.14, 285) : 'My House',
+# 	(38.89, -77.03, 13) : 'The wight house'
+# }
+
+
+
+# birth_year = 1998
+# years = [i for i in range(birth_year, birth_year+6)]
+# print(years)
+# print('Тебе было 3 в ' + str(years[3]))
+# print(years[-1])
+# things = ['mozzarela','cinderella','salmonella']
+# print(things[1].title())
+# print(things)
+# print(things[0].upper())
+# print(things)
+# things[0] = things[0].upper()
+# print(things)
+# x = things.index('salmonella')
+# del things[x]
+# print(things)
+
+# surprise = ['Groucho', 'Chico', 'Harpo']
+# surprise[-1] = surprise[-1].lower()
+# surprise[-1] = surprise[-1].swapcase()
+# print(surprise[-1])
+
+# e2f = {'dog' : 'chien','cat' : 'chat','walrus' : 'morse'}
+# print(e2f['walrus'])
+# x = list(e2f.items())
+# f2e = {}
+# for i in x:
+# 	print(i)
+# 	f2e.update({i[1] : i[0]})
+# print(f2e['chien'])
+
+# y = set(e2f.keys())
+# print(y)
+
+# life = {
+# 	'animal' : {
+# 		'cat' : ['Henry', 'Grumpy', 'Lucy'],
+# 		'octopi' : {},
+# 		'emus' : {}
+# 	},
+# 	'plant' : {},
+# 	'other' : {},
+# }
+
+# print(life.keys())
+# print(life['animal'].keys())
+# print(life['animal']['cat'])
+
+
+
+# print('Hello\
+# , World')
+# long_word = 'qwertyuiopqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweq'\
+# +'qweqweqweqweqweqwe[q]oqweqw]eq[w[[]]]]]]]]]]]]]]]]]]][[][w[[qw]e][qwe]\
+# qweqwipoeqweiqwuepouqwpoieqwew'
+# print(long_word)
+
+# while True:
+# 	stuff = input("String to capitalize [type q to quit]: ")
+# 	if stuff == "q":
+# 		break
+# 	print(stuff.capitalize())
+
+# while True:
+# 	x = input()
+# 	if x == 'q':
+# 		break
+# 	x = int(x)*int(x)
+# 	if x%2:
+# 		continue
+# 	print(x)
+
+# num = [1,2,3,4,5,7,8,9]
+# position = 0
+# while position < len(num):
+# 	x = num[position]
+# 	print(x)
+# 	if x == 6:
+# 		print('Found even number', x)
+# 		break
+# 	position += 1
+# else: # break not called
+# 	print('No even number found')
+
+# lorem = {
+# 	'ipsum' : 'dolor',
+# 	'sit' : 'amet',
+# 	'consectetur' : 'adipisicing',
+# 	'elit' : 'sed',
+# 	'do' : 'eiusmod',
+# }
+# for x in lorem: 		#can be also lorem.keys()
+# 	print(x)
+# for x in lorem.values():
+# 	print(x)
+# for x in lorem.items():
+# 	print(x)
+# for x, y in lorem.items():
+# 	print('Hello', x, 'World', y)
+
+# cheeses = []
+# for x in cheeses:
+# 	print('Cheese', x)
+# 	break
+# else: 
+# 	print('here is no cheese')
+
+# days = ['Monday', 'Tuesday', 'Wednesday']
+# fruits = ['banana', 'orange', 'peach']
+# drinks = ['coffee', 'tea', 'beer']
+# desserts = ['tiramisu', 'ice cream', 'pie', 'pudding']
+# for day, fruit, drink, dessert in zip(days, fruits, drinks, desserts):
+# 	print(day, fruit, drink, dessert)
+# 	print(dessert) 				#pudding never works
+
+# english= ['Monday', 'Tuesday', 'Wednesday']
+# franch = ['Lundi', 'Mardi', 'Mercredi']
+
+# x = zip(english, franch)
+# print(x)
+# x = list(x)
+# print(x)
+# x = dict(x)
+# print(x)
+
+# for x in range(0, 10, 2):
+# 	print(x)
+# lis = []
+# for x in range(20, 10, -2):
+# 	lis.append(x)
+# print(lis)
+
+# [выражение for элемент in итерабельный объект]
+
+# lis = [x for x in range(20,10,-2)]
+# print(lis)
+# lis = [x**x for x in range(10,0,-1)]
+# print(lis)
+# lis = [x for x in range(0,30) if x%3==0]
+# print(lis)
+# lis = []
+# for x in range(0,30):
+# 	if x%3 == 0:
+# 		lis.append(x)
+# print(lis)
+
+# cols = range(1,6)
+# rows = range(1,4)
+# # for col in cols:
+# # 	for row in rows:
+# # 		print(col, row)
+# cells = [(col, row) for row in rows for col in cols]
+# for x in cells:
+# 	print(x)
+
+# { выражение_ключа: выражение_значения for выражение in итерабельный объект }
+
+# word = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do'
+# dic = {x:word.count(x) for x in word}
+# print(dic)
+
+# word = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do'
+# dic = {x:word.count(x) for x in set(word)}
+# print(dic)
+
+# { выражение for выражение in итерабельный объект}
+
+# x = {x for x in range(50) if x%3==0}
+# print(x)
+
+# x = (x for x in range(10))
+# print(x)
+# # for t in x:
+# # 	print(t)
+# e = list(x)
+# print(e)
+
+# def menu(wine, entree, dessert = 'pudding'):
+# 	return {'Wine':wine, 'entree':entree, 'dessert':dessert}
+# print(menu('white', 'chicken', 'pie'))
+# print(menu('first', 'second', 'third'))
+# print(menu(entree = 'chicken', dessert = 'pie', wine = 'white'))
+
+# def isbug(arg, x=[]):
+# 	x.append(arg)
+# 	return x
+# print(isbug(15))
+# print(isbug(21))
+# print(isbug(42))
+
+# def test(arg, x=None):
+# 	if x is None:
+# 		x = []
+# 	x.append(arg)
+# 	return x
+# print(test(14))
+# print(test('ew'))
+
+# def test(*x):
+# 	print('qweqwe', x)
+# test()
+# test('qwe', 12, True)
+
+# def test(first, second, *args):
+# 	'mmmm, documentation'
+# 	print('First -', first)
+# 	print('Second -', second)
+# 	print('Other -', args)
+# test('qwe', 'asd', 'dgdg', 'Hello')
+
+# def print_kwords(**kwargs):
+# 	'''MMMM LONG DOCUMENTATION'''
+# 	print('Keywords:', kwargs)
+# print_kwords(world='Hello')
+# print_kwords(wine='merlot', entree='mutton', dessert='macaroon')
+# help(print_kwords)
+# print(print_kwords.__doc__)
+
+# def sorokdwa():
+# 	print(42)
+# def runniga(func):
+# 	func()
+# runniga(sorokdwa)		# В Python круглые скобки означают «вызови эту функцию». 
+# 				Если скобок нет, Python относится к функции как к любому другому объекту. 
+
+# def plus(x,y):							# Внутри функции pluswithargs() аргумент plus, 
+# 	print(x+y)							# представляющий собой имя функции, был присвоен 
+# def pluswithargs(func, first, secind):	# параметру func, 13 — параметру first, а 15 — 
+# 	func(first, secind)					# параметру secind. В итоге получается следующая 
+# pluswithargs(plus, 13, 15)				# конструкция: plus(13,15)
+
+# def summa(*args):
+# 	return sum(args)
+# def summ_with_args(func, *suuuma):
+# 	return func(*suuuma)
+# print(summ_with_args(summa, 1,2,3,4,5,6,7,8,9))
+
+# def first(a,b):
+# 	def second(c,d):
+# 		print(c, 'c')
+# 		print(d, 'd')
+# 		return c + d
+# 	return second(a,b)
+# print(first(8,7))
+# print(second(4,7))			# you can't
+
+# def edit(text):
+# 	def inner(hello):
+# 		return 'Smili. Sweet. Sister. %s' % hello
+# 	return inner(text)
+# print(edit('CYKA BLYAT'))
+
+# def edit2(text):
+# 	def inner2():
+# 		return 'Smile. Sweet. Sister. %s' % text
+# 	return inner2
+# # print(edit2('chiki briki i v damki')())
+# a = edit2('chiki briki i v damki')
+# # print(a())
+# print(type(a))
+
+# def editstory(words, func):
+# 	for x in words: 
+# 		print(func(x))
+# stairs = ['thud','meow','thud','hiss']
+# # qwe = ['qwe','qwe','asd','dfg']
+# # def enliven(word):
+# # 	return word.capitalize() + '!'
+# # editstory(stairs, enliven)
+# editstory(stairs, lambda word: word.capitalize() + '!')
+
+# def f(x): return x**2
+# print(f(8))
+# g = lambda x:x**2
+# print(g(8))
+
+# def make_incrementor(n): return lambda x: x+n
+# f = make_incrementor(2)
+# g = make_incrementor(6)
+# print(f(42),g(42))
+# print(make_incrementor(6)(9))
+
+# foo = [2, 18, 9, 22, 17, 24, 8, 12, 27]
+# qwe = list(filter(lambda x: x%3==0, foo))
+# print(filter(lambda x: x%3==0, foo))
+
+# names = ['Anne', 'Amy', 'Bob', 'David', 'Carrie', 'Barbara', 'Zach']
+# b_names = list(filter(lambda i: i.startswith('B'), names))
+# print(b_names)
+
+# foo = [2, 18, 9, 22, 17, 24, 8, 12, 27]
+# print(list(map(lambda x: x * 2 + 10, foo)))
+# print(foo)
+
+# from functools import *
+# foo = [2, 18, 9, 22, 17, 24, 8, 12, 27]
+# print(reduce(lambda x, y: x + y, foo))
+
+# foo = [2, 18, 9, 22, 17, 24, 8, 12, 27]
+# def sqr(x):
+# 	bar = []
+# 	for i in x:
+# 		bar.append(i**2)
+# 	return bar
+# print(sqr(foo))
+
+# items = [1, 2, 3, 4, 5]
+# def sqr(x): return x ** 2
+# print(list(map(sqr, items)))
+
+# def square(x):
+# 	return (x**2)
+# def cube(x):
+# 	return (x**3)
+# funcs = [square, cube]
+# for r in range(5):
+# 	value = list(map(lambda x: x(r), funcs))
+# 	print(value)
+
+# nums = range(50)
+# qew = list(nums)
+# print(nums)
+# print(qew)
+# if qew is nums:
+# 	print('wqe')
+
+# def sqr(x): return x**2
+# print(list(map(sqr, [1, 2, 3])))
+
+# В Python генератор — это объект, который предназначен для создания последовательностей
+
+# def my_range(start = 1, end = 10, step = 1):
+# 	number = start
+# 	while number < end:
+# 		yield number
+# 		number += step
+# print(my_range)
+# ranger = my_range(1,5)
+# for i in ranger:
+# 	print(i)
+
+# Декоратор — это функция, которая принимает одну функцию в качестве аргумента и возвращает другую функцию.
+
+# def getTalk(type = 'shout'):
+# 	def shout(word = 'Yes'):
+# 		return word.capitalize() + '!'
+# 	def whisper(word = 'Yes'):
+# 		return word.lower() + '...'
+
+# 	if type == 'shout':
+# 		return shout
+# 	else: 
+# 		return whisper
+# talk = getTalk()
+# talksec = getTalk('not shout')
+# print(talk)
+# print(talk(('decor is easy')))
+# print(talksec(('or not')))
+
+# def capapcap(word = 'Yes'):
+# 	print(word.capitalize() + '!')
+# 	print()
+
+# def dosomething(func):
+# 	print('do something before you call the inner function, each you give me')
+# 	func()
+
+# dosomething(capapcap)
+
+# def my_shine_new_decorator(a_func_to_decorate):
+# 	def the_wrapper_around_the_original_func():
+# 		print('Some code to do before main func')
+# 		a_func_to_decorate()
+# 		print('Some code to do after main func')
+# 	return the_wrapper_around_the_original_func
+# def a_stand_alone_func():
+# 	print('It\'s just lonely function...')
+# a_stand_alone_func = my_shine_new_decorator(a_stand_alone_func)
+# a_stand_alone_func()
+# print()
+# @my_shine_new_decorator
+# def another_stand_alone_func():
+# 	print('Leave me alone!')
+# another_stand_alone_func()
+
+# def bread(func):
+# 	def wrapper():
+# 		print('</------\>')
+# 		func()
+# 		print('<\______/>')
+# 	return wrapper
+# def ingredients(func):
+# 	def wrapper():
+# 		print('##tomato##')
+# 		func()
+# 		print('~~salad~~')
+# 	return wrapper
+# @bread
+# @ingredients
+# def sandwich(food = '---ham---'):
+# 	print(food)
+# sandwich()
+# print()
+# # sandwich = bread(ingredients(sandwich))
+# # sandwich()
+
+
+# def document_it(func):
+# 	def new_function(*args, **kwargs):
+# 		print('Name func -', func.__name__)
+# 		print('arguments -', args)
+# 		print('dictionary-', kwargs)
+# 		result = func(*args, **kwargs)
+# 		print('result    -', result)
+# 		return result
+# 	return new_function
+
+# def squer_it(func):
+# 	def new_function(*args, **kwargs):
+# 		result = func(*args, **kwargs) ** 2
+# 		return result
+# 	return new_function
+
+# @document_it
+# @squer_it
+# def addnum(a,b):
+# 	return a+b
+# # cooleraddnum = document_it(addnum)
+# # cooleraddnum(12,15)
+# print(addnum(12,15))
+
+
+# animal = 'Cat'
+# def func():
+# 	global animal
+# 	animal = 'Fox'
+# 	print(id(animal))
+# 	print(animal)
+# func()
+# print(id(animal))
+
+# def localvar():
+# 	animal = 'cat'
+# 	lis = ['qwe','asd',123]
+# 	dick = {'Hi':'Hello', 'So':'Have you'}
+# 	print(locals())
+# print(globals(), end='\n\n')
+# localvar()
+
+# def somefunc():
+# 	'''Some documantation
+# 	on this func'''
+# 	print('name: ' + somefunc.__name__)
+# 	print('doc: ' + somefunc.__doc__)
+# somefunc()
+
+# lis = ['so','how','are','you']
+# position = 5
+# try:
+# 	print(lis[position])
+# except IndexError:
+# 	print('position not between 0 and', len(lis)-1, 'now', position)
+# except: 
+# 	print('Oh, god! Something is wrong!')
+
+# short_list = ['qwe','asd','zxc',123,4.1415]
+# while True:
+# 	position = input('Position? q = quit: ')
+# 	if position == 'q': 
+# 		break
+# 	try: 
+# 		position = int(position)
+# 		print(short_list[position])
+# 	except IndexError as ind:
+# 		print('Wrong index:', position)
+# 	except Exception as other:
+# 		print('Something else broked:', other)
+
+# class UppercaseException(Exception):
+# 	pass
+# words = ['eeenie', 'meenie', 'miny', 'MO']
+# for i in words:
+# 	if i.isupper():
+# 		raise UppercaseException(i)
+
+# 						guess_me = 0
+# while guess_me != 7:
+# 	guess_me = int(input('Number: '))
+# 	if guess_me > 7: 
+# 		print('Too high')
+# 	elif guess_me < 7:
+# 		print('Too low')
+# 	else: 
+# 		print('Ok')
+# 		break
+# start = 1
+# while guess_me > start:
+# 	print(start)
+# 	if guess_me == start:
+# 		print('Found')
+# 		break
+# 	elif start > guess_me:
+# 		print('start too high')
+# 		# start -+ 1 
+# 		# continue
+# 		break
+# 	else: 
+# 		print('start too low')
+# # 	start += 1
+# x = [3,2,1,0]
+# for i in x:
+# 	print(i)
+
+# x = [i for i in range(10) if i%2!=0]
+# print(x)
+
+# squares = {x:x**2 for x in range(10)}
+# print(squares)
+
+# odd = {i for i in range(10) if i%2==0}
+# print(odd)
+
+# for thing in ('Got %s' % number for number in range(10)):
+# 	print(thing)
+
+# def test(func):
+# 	def inner(*args, **kwargs):
+# 		print('Start')
+# 		result = func(*args, **kwargs)
+# 		print('end')
+# 		return result
+# 	return inner
+# @test
+# def greeting():
+# 	print('So have you heard?')
+# greeting()
+
+# nums = [55,44,33,22,11]
+# if all(i > 5 for i in nums):
+# 	print('все числа больше 5')
+# if any(i % 2 == 0 for i in nums):
+# 	print('тут есть чётные числа. ')
+# for i in enumerate(nums):
+# 	print(i)
+
+# from random import choice as my_func
+# x = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipisicing', 'elit', 'do', 'eiusmod']
+# randomchoice = my_func(x)
+# print(randomchoice)
+
+# from weater import daily, weekli
+# print('Daily weater:', daily.forecast())
+# print('Weekly weater:')
+# for i, j in enumerate(weekli.forecast(), 1):
+# 	print(i, j)
+
+# # , 'Palin': 'Michael', 'Chapman': 'Graham', 'Idle': 'Eric'
+# x = {'Cleese': 'John', 'Jones': 'Terry'}
+# print(x.get('Jones', 'NOT FOUND'))
+# y = x.setdefault('Pelin','Hello!')
+# print(x)
+# z = x.setdefault('Cleese', 'sometext')
+# print(z)
+
+# from collections import defaultdict
+# hmm = defaultdict(int)
+# # hmm = {'Cleese': 'John', 'Jones': 'Terry' : None, 'Palin' : None, 'Chapman' : None, 'Idle': 'Eric'}
+# hmm['Hydrogen'] = 1
+# hmm['Lead']
+# print(hmm)
+
+# from collections import defaultdict
+# def perce():
+# 	return 'не тревожь читающих драконов'
+# x = defaultdict(perce)
+# x['first'] = 'one'
+# x['second'] = 'two'
+# print(x['notnotnot'])
+
+# from collections import defaultdict
+# food_counter = defaultdict(int)
+# for food in ['чаёк','сосисочки','чаёк','кофе','кофе','кофе','молоко','кофе','яблоко','яблоко']:
+# 	food_counter[food] += 1
+# for one, count in food_counter.items():
+# 	print(one, count)
+
+# dict_counter = {}
+# for food in ['чаёк','сосисочки','чаёк','кофе','кофе','кофе','молоко','кофе','яблоко','яблоко']:
+# 	if not food in dict_counter:
+# 		dict_counter[food] = 0
+# 	dict_counter[food] += 1
+# for food, count in dict_counter.items():
+# 	print(food, count)
+
+# x,y,z = ( input() for _ in range(3) )
+# print(x,y,z)
+
+# from collections import Counter
+# breakfast = ['чаёк','сосисочки','чаёк','кофе','кофе','кофе','молоко','кофе','яблоко','яблоко']
+# breakfast_counter = Counter(breakfast)
+# print(breakfast_counter)
+# print(breakfast_counter.most_common(2))			# two elements
+# lunch = ['кофе','кофе','кофе','молоко','яблоко','яблоко']
+# lunch_counter = Counter(lunch)
+# print(lunch_counter)
+# print(breakfast_counter + lunch_counter)
+# print(breakfast_counter - lunch_counter)
+# print(breakfast_counter & lunch_counter)
+# print(breakfast_counter | lunch_counter)
+
+# def polindrom(word):					# закончил на 152 странице. скучно, пиздец. потом продолжу. 
+# 	from collections import deque
+# 	dq = deque(word)
+# 	while len(dq) > 1:
+# 		if dq.popleft() != dq.pop():
+# 			return False
+# 		return True
+# print(polindrom('rar'))
+
+# from pprint import pprint
+# person = {											# 6 way
+# 	'name' : {
+# 		'last_name' : 'Ivanov',
+# 		'first_name' : 'Ivan',
+# 		'middle_name' : 'Ivanovich'},
+# 	'address' : [
+# 		's. Andruchki', 
+# 		'st. Vasilkovska 23b', 
+# 		'ap.12'],
+# 	'phone' : {
+# 		'home_phone' : '34-67-12',
+# 		'mobile_phone' : '8-800-555-35-35',
+# 		'mobile_phone2' : 'None'}
+# }
+# pprint(person)
+
+
+
+# CLASSES
+
+# class Person():
+# 	def __init__(self, name):
+# 		self.name = name
+
+# hunter = Person('Elmer Fudd')
+# print(hunter.name)
+
+# class pickle():
+# 	def mmm(self):
+# 		print('I\'m pickle Rick!')
+# class rick(pickle):
+# 	def mmm(self):
+# 		print('mmmm, pickle...')
+# gimicar = pickle()
+# gimiyogo = rick()
+# gimicar.mmm()
+# gimiyogo.mmm()
+
+# class pickle():
+# 	def mmm(self):
+# 		print('I\'m pickle Rick!')
+# class rick(pickle):
+# 	def mmm(self):
+# 		print('mmmm, pickle...')
+# 	def change(self):
+# 		print('sorry I can\'t go with you')
+# gimicar = pickle()
+# gimiyogo = rick()
+# gimicar.mmm()
+# gimiyogo.mmm()
+# gimiyogo.change()
+# ##### pickle.mmm(gimicar)
+
+# class Person():
+# 	def __init__(self, name):
+# 		self.name = name
+# class MDPerson(Person):
+# 	def __init__(self, name):				# it calls перегрузка метода
+# 		self.name = 'Doctor ' + name
+# class JDPerson(Person):
+# 	def __init__(self, name):				# it calls перегрузка метода
+# 		self.name = name + ' advakat'
+# first = Person('Olejka')
+# second = MDPerson('House')
+# third = JDPerson('Judie Holps')
+# print(first.name)
+# print(second.name)
+# print(third.name)
+
+# class EmailPerson(Person):
+# 	def __init__(self, name, email):
+# 		super().__init__(name)
+# 		self.email = email
+# user = EmailPerson('Bob Morlie', 'bob@gmail.com')
+# print(user.name)
+# print(user.email)
+
+
+# class Duck():
+# 	def __init__(self,input_name):
+# 		self.hidden_name = input_name
+# 	def get_name(self):
+# 		print('inside the getter')
+# 		return self.hidden_name
+# 	def set_name(self, input_name):
+# 		print('inside the setter')
+# 		self.hidden_name = input_name
+# 	name = property(get_name, set_name)
+
+# x = Duck('NNAAMMEE')
+# print(x.name())
+
+# nums = [11,22,33,44,55]
+# res = list(map(lambda x: x+5, nums))
+# print(res)
+
+# def countdown():
+# 	i = 5
+# 	while i>0:
+# 		yield i
+# 		i -= 1
+# for i in countdown():
+# 	print(i)
+# print(i)
+
+# def numbers(x):
+# 	for i in range(x):
+# 		if i%2 == 0:
+# 			yield i
+# print(list(numbers(11)))
+
+# def decor(func):
+# 	def wrap():
+# 		print('_____________________________')
+# 		func()
+# 		print('-----------------------------')
+# 	return wrap
+# @decor
+# def print_text():
+# 	print('Hello, World!')
+# # def print_text():
+# # 	print('Hello, World!')
+# # decorated = decor(print_text)
+# print_text()
+# # decorated()
+
+# def factorial(x):
+# 	if x == 1:
+# 		return 1
+# 	else: 
+# 		return x*factorial(x-1)
+
+# def is_even(x):
+# 	if x == 0:
+# 		return True
+# 	else: 
+# 		return is_odd(x-1)
+# def is_odd(x):
+# 	return not is_even(x)
+
+# 	fib(3)								 + fib(2)
+# 	fib(2) 				+ fib(1)		fib(1) + fib(0)
+# 	fib(1) 	+ fib(0)
+
+# a = {1,2,3,4,5,6,}
+# b = {4,5,6,7,8,9,}
+
+# print(a|b)
+# print(a&b)
+# print(a-b)
+# print(b-a)
+# print(a^b)
+
+# from itertools import count
+# for i in count(4, 2):
+# 	print(i)
+# 	if i > 20:
+# 		break
+
+# from itertools import cycle
+# # for i in 'python':
+# # 	print(i)
+# step = 0
+# for i in cycle('python'):
+# 	print(i)
+# 	if step == 20:
+# 		break
+# 	step += 1
+
+# from itertools import accumulate, takewhile
+# nums = list(accumulate(range(8)))			# accumulate([1,2,3,4,5]) -> [1,3,6,10,15]
+# print(nums)
+# print(list(takewhile(lambda x: x<=6, nums))) 	# takewhile отличается от filter наличием брейка. 
+
+# реализуйте класс для сохранения рядкив и роботы с ними. каждый объект класса должен как-то
+
+# from itertools import product, permutations
+# letters = ('a', 'b')
+# qwe = ['12','qq','ww',12,32]
+# print(list(product(letters, qwe, range(2))))
+# print(list(permutations(letters)))
+
+# class Cat:
+# 	def __init__(self, color, legs):		# __init__ вызывается, когда создаётся экземпляр. считается конструктором
+# 		self.color = color
+# 		self.legs = legs
+# felix = Cat('ginder', 4)
+# rover = Cat('dog-colored', 4)
+# stumpy = Cat('brown', 3)
+# for attribute, value in felix.__dict__.items():
+#     print(attribute, value)
+
+# class Animal:
+# 	def __init__(self, name, color):
+# 		self.name = name
+# 		self.color = color
+# class Cat(Animal):
+# 	def purr(self):
+# 		print('purr')
+# class Dog(Animal):
+# 	def bark(self):
+# 		print('Woof!')
+# fido = Dog('Fido','brown')
+# print(fido.color)
+# fido.bark()
+
+# class Wolf:
+# 	def __init__(self, name, color):
+# 		self.name = name 
+# 		self.color = color
+# 	def bark(self):
+# 		print('Grrr')
+# class Dog(Wolf):
+# 	def bark(self):
+# 		print('Woof')
+# husky = Dog('Max', 'black')
+# husky.bark()
+
+# class A:
+# 	def one(self):
+# 		print('AAAA')
+# class B(A):
+# 	def two(self):
+# 		print('BBBBB')
+# class C(B):
+# 	def three(self):
+# 		print('CCCC')
+# c = C()
+# c.one()
+# c.two()
+# c.three()
+
+# class A:
+# 	def spam(self):
+# 		print(1)
+# class B(A):
+# 	def spam(self):
+# 		print(2)
+# 	def superspam(self):
+# 		super().spam()
+# B().spam()
+# B().superspam()
+
+# class Vector:
+# 	def __init__(self,x,y):
+# 		self.x = x
+# 		self.y = y
+# 	def __add__(self, other):				# add привязан к +, 
+# 		return Vector(self.x + other.x, self.y + other.y)
+# 	def __sub__(self,other):				# sub привязан к -. Возвращать они могут что угодно
+# 		return Vector(self.x - other.x, self.y - other.y)
+		# <  def __lt__(self):	lower than						# *  def __mul__(self): 
+		# <= def __lt__(self):	lower equal						# /  def __truediv__(self):
+		# == def __lt__(self):	equal							# // def __floordiv__(self):
+		# != def __lt__(self):	not equal						# %  def __mod__(self):
+		# >  def __lt__(self):	greater than					# ** def __pow__(self):
+		# >= def __lt__(self):	greater equal					# &  def __and__(self):
+																# ^  def __xor__(self):
+																# |  def __or__(self):
+# __len__  -  len();	__getitem__  -  для индексации;	__setitem__  -  для присваивания значения индексируемому элементу
+# __delitem__  -  для удаления индексируемого элемента;	__iter__  -  для перебора объектов (в циклах for, например)
+# __contains__  -  для in;	__call__;  __int__;  __str__; 
+
+# firstvecx = int(input('firstvecx: '))
+# firstvecy = int(input('firstvecy: '))
+# seconvecx = int(input('seconvecx: '))
+# seconvecy = int(input('seconvecy: '))
+# firstvec = Vector(firstvecx, firstvecy)
+# seconvec = Vector(seconvecx, seconvecy)
+# plus  = firstvec + seconvec
+# minus = firstvec - seconvec
+# print(plus.x)
+# print(plus.y)
+# print(minus.x)
+# print(minus.y)
+
+# class Special:
+# 	def __init__(self,cont):
+# 		self.cont = cont
+# 	def __truediv__(self, other):
+# 		line = '='*len(other.cont)
+# 		return '\n'.join([self.cont, line, other.cont])
+# spam = Special('spam')
+# hello = Special('Hello, World!')
+# print(spam/hello)
+
+# class Special:					# что вообще происходит в этом класса? 
+# 	def __init__(self, cont):		# неплохо было бы понять, но сейчас это слишком сложно...
+# 		self.cont = cont
+# 	def __gt__(self,other):
+# 		for index in range(len(other.cont)+1):
+# 			result = other.cont[:index] + '>' + self.cont
+# 			result += '>' + other.cont[index:]
+# 			print(result)
+# spam = Special('spam')
+# eggs = Special('eggs')
+# spam>eggs
+
+# import random
+# class VagueList:
+# 	def __init__(self, cont):
+# 		self.cont = cont
+# 	def __getitem__(self, index):
+# 		return self.cont[index + random.randint(-1,1)]
+# 	def __len__(self):
+# 		return random.randint(0, len(self.cont)*2)
+# vague_list = VagueList(['q','w','e','r','t','y'])
+# print(len(vague_list))
+# print(len(vague_list))
+# print(vague_list[2])
+# print(vague_list[2])
+
+
+#### class GameObject:
+####     class_name = ""
+####     desc = ""
+####     objects = {}
+####     def __init__(self, name):
+####         self.name = name
+####         GameObject.objects[self.class_name] = self
+####     def get_desc(self):
+####         return self.class_name + "\n" + self.desc
+#### class Goblin(GameObject):
+####     def __init__(self, name):
+####         self.class_name = "goblin"
+####         self.health = 3
+####         self._desc = "A foul creature"
+####         super().__init__(name)
+####     @property
+####     def desc(self):
+####         if self.health >= 3:
+####             return self._desc
+####         elif self.health == 2:
+####             health_line = "It has a wound on its knee."
+####         elif self.health == 1:
+####             health_line = "Its left arm has been cut off!"
+####         elif self.health <= 0:
+####             health_line = "It is dead."
+####         return self._desc + "\n" + health_line
+####     @desc.setter
+####     def desc(self, value):
+####         self._desc = value
+#### goblin = Goblin("Gobbly")
+#### def hit(noun):
+####     if noun in GameObject.objects:
+####         thing = GameObject.objects[noun]
+####         if type(thing) == Goblin:
+####             thing.health -= 1
+####             if thing.health <= 0:
+####                 msg = "You killed the goblin!"
+####             else:
+####                 msg = "You hit the {}".format(thing.class_name)
+####     else:
+####         msg = "There is no {} here.".format(noun)
+####     return msg
+#### def examine(noun):
+####     if noun in GameObject.objects:
+####         return GameObject.objects[noun].get_desc()
+####     else:
+####         return "There is no {} here.".format(noun)
+#### def get_input():
+####     command = input(": ").split()
+####     verb_word = command[0]
+####     if verb_word in verb_dict:
+####         verb = verb_dict[verb_word]
+####     else:
+####         print("Unknown verb {}".format(verb_word))
+####         return
+####     if len(command) >= 2:
+####         noun_word = command[1]
+####         print(verb(noun_word))
+####     else:
+####         print(verb("nothing"))
+#### def say(noun):
+####     return 'You said "{}"'.format(noun)
+#### verb_dict = {
+####     "say": say,
+####     "examine": examine,
+####     "hit": hit
+#### }
+#### while True:
+####     get_input()
+
+
+
+# class Class1:         # Базовый класс для класса Class2
+#     def f_func1(self):
+#         print("Метод f_func1() класса Class1")
+ 
+# class Class2(Class1): # Класс Class2 наследует класс Class1
+#     def f_func2(self):
+#         print("Метод f_func2() класса Class2")
+ 
+# class Class3(Class1): # Класс Class3 наследует класс Class1
+#     def f_func1(self):
+#         print("Метод f_func1() класса Class3")
+#     def f_func2(self):
+#         print("Метод f_func2() класса Class3")
+#     def f_func3(self):
+#         print("Метод f_func3() класса Class3")
+#     def f_func4(self):
+#         print("Метод f_func4() класса Class3")
+ 
+# class Class4(Class2, Class3): # Множественное наследование
+#     def f_func4(self):
+#         print("Метод f_func4() класса Class4")
+# c1 = Class4()             # Создаем экземпляр класса Class4
+# c1.f_func1()              # Выведет: Метод f_func1() класса Class1
+# c1.f_func2()              # Выведет: Метод f_func2() класса Class2
+# c1.f_func3()              # Выведет: Метод f_func3() класса Class3
+# c1.f_func4()
+
+
+
+
