@@ -6,7 +6,7 @@ from time import sleep
 
 
 token = misc.token
-url_begin = 'https://api.telegram.org/bot' + token + '/' # sendMessage?chat_id=100310279&text=hi
+url_begin = 'https://api.telegram.org/bot{0}/'.format(token) # sendMessage?chat_id=100310279&text=hi
 
 global last_update_id
 last_update_id = 0
